@@ -1,0 +1,8 @@
+[package]
+name = "cborder"
+version = "1.0.0"
+authors = ["siiky <siiky@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
