@@ -67,6 +67,11 @@ fn main() {
             /* (from, to) */
             (f.clone(), new_f)
         })
+        .filter(|(f, t)| {
+            let s1 = f.as_os_str();
+            let s2 = t.as_os_str();
+            s1 != s2
+        })
         .collect();
 
     files.reverse();
